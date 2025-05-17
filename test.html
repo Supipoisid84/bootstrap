@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="et">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,57 +7,318 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
   </head>
   <body>
-      <style>
-    .hero-section {
-      height: 100vh;
-      background-color: #f8f9fa;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  <!--Pilt ja varvid-->
+ <style>
+    .hero {background-image: url("https://picsum.photos/id/600/400");background-size: cover;height: 500px;display: flex;align-items: center;}
 
-    .hero-img {
-      width: 100%;
-      height: auto;
-      max-width: 600px;
-    }
+    .btn-outline-blue {color: #0d6efd;background-color: white;}
 
-    .btn-custom {
-      margin-right: 10px;
-    }
+    .btn-outline-blue:hover {background-color: #0d6efd;color: white;}
 
-    .text-right-box {
-      max-width: 450px;
-    }
+    .btn-blue {background-color: #0d6efd;color: white;border: 2px solid #0d6efd;}
+
+    .btn-blue:hover {background-color: #0b5ed7;}
   </style>
-</head>
-<body>
+<!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand fw-bold text-primary" href="#">Alex</a>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Team</a></li>
+        </ul>
+        <button class="btn btn-outline-secondary">Teeb midagi</button>
+      </div>
+    </div>
+  </nav>
 
-  <section class="hero-section">
+  <!--Tekst ja nupud taustaees-->
+  <section class="hero">
     <div class="container">
-      <div class="row align-items-center">
-        <!-- Left Image -->
-        <div class="col-md-6 d-none d-md-block">
-          <img src="https://picsum.photos/id/684/600/400" alt="Image" class="hero-img">
-        </div>
-
-        <!-- Right Content -->
-        <div class="col-md-6 text-center text-md-start text-right-box">
-          <h2 class="fw-bold">CENTER RIGHT</h2>
-          <p class="text-muted">
-            Sub-heading. Header 100% height with bottom align items.
-            Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-          </p>
-          <div class="d-flex justify-content-center justify-content-md-start">
-            <a href="#" class="btn btn-primary btn-custom">Get started now</a>
-            <a href="#" class="btn btn-outline-primary">
-              <i class="bi bi-play-fill"></i> Watch video
-            </a>
-          </div>
+      <div class="row justify-content-end">
+        <div class="col-md-6 text-center text-md-start">
+          <h1 class="fw-bold">CENTER RIGHT</h2>
+          <h6> Sub-heading. Header 100% height with bottom align items. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. </h2>
+          <a href="#" class="btn btn-blue">Get started now</a>
+          <a href="#" class="btn btn-outline-blue me-2">Watch video</a>
         </div>
       </div>
     </div>
   </section>
+
+<!-- Features Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row row-cols-2 g-4">
+      <div class="col">
+        <div class="d-flex align-items-start">
+          <div class="me-3">
+            <i class="bi bi-gem text-primary fs-3"></i>
+          </div>
+          <div>
+            <h5 class="fw-bold">Feature title</h5>
+            <p class="text-muted mb-0">Use dropbox to save things in the “cloud” because throwing things away is stressful and this way you don’t have to.</p>
+          </div>
+        </div>
+      </div>
+       <div class="col">
+        <div class="d-flex align-items-start">
+          <div class="me-3">
+            <i class="bi bi-gem text-primary fs-3"></i>
+          </div>
+          <div>
+            <h5 class="fw-bold">Feature title</h5>
+            <p class="text-muted mb-0">Use dropbox to save things in the “cloud” because throwing things away is stressful and this way you don’t have to.</p>
+          </div>
+        </div>
+      </div>
+       <div class="col">
+        <div class="d-flex align-items-start">
+          <div class="me-3">
+            <i class="bi bi-gem text-primary fs-3"></i>
+          </div>
+          <div>
+            <h5 class="fw-bold">Feature title</h5>
+            <p class="text-muted mb-0">Use dropbox to save things in the “cloud” because throwing things away is stressful and this way you don’t have to.</p>
+          </div>
+        </div>
+      </div>
+       <div class="col">
+        <div class="d-flex align-items-start">
+          <div class="me-3">
+            <i class="bi bi-gem text-primary fs-3"></i>
+          </div>
+          <div>
+            <h5 class="fw-bold">Feature title</h5>
+            <p class="text-muted mb-0">Use dropbox to save things in the “cloud” because throwing things away is stressful and this way you don’t have to.</p>
+          </div>
+        </div>
+      </div>
+       <div class="col">
+        <div class="d-flex align-items-start">
+          <div class="me-3">
+            <i class="bi bi-gem text-primary fs-3"></i>
+          </div>
+          <div>
+            <h5 class="fw-bold">Feature title</h5>
+            <p class="text-muted mb-0">Use dropbox to save things in the “cloud” because throwing things away is stressful and this way you don’t have to.</p>
+          </div>
+        </div>
+      </div>
+       <div class="col">
+        <div class="d-flex align-items-start">
+          <div class="me-3">
+            <i class="bi bi-gem text-primary fs-3"></i>
+          </div>
+          <div>
+            <h5 class="fw-bold">Feature title</h5>
+            <p class="text-muted mb-0">Use dropbox to save things in the “cloud” because throwing things away is stressful and this way you don’t have to.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Product Features-->
+<section class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-5">Product features</h2>
+    <div class="row align-items-center">
+      <!--Vasakul Cards-->
+      <div class="col-md-4">
+        <div class="mb-4 p-3 bg-light text-start">
+          <h6 class="fw-bold mb-1">Auctor molestie</h6>
+          <p class="text-muted mb-0">Praesent mollis, massa in auctor molestie</p>
+        </div>
+        <div class="mb-4 p-3 bg-light text-start">
+          <h6 class="fw-bold mb-1">Lorem ipsum dolor</h6>
+          <p class="text-muted mb-0">Praesent mollis, massa in auctor molestie</p>
+        </div>
+        <div class="mb-4 p-3 bg-light text-start">
+          <h6 class="fw-bold mb-1">Etiam sed iaculis</h6>
+          <p class="text-muted mb-0">Praesent mollis, massa in auctor molestie</p>
+        </div>
+      </div>
+
+      <!--Pilt-->
+      <div class="col-md-4">
+        <img src="https://picsum.photos/id/400/700" alt="Pilt" class="img-fluid" />
+      </div>
+
+      <!--Paremal Cards-->
+      <div class="col-md-4">
+        <div class="mb-4 p-3 bg-light text-start">
+          <h6 class="fw-bold mb-1">Lorem ipsum dolor</h6>
+          <p class="text-muted mb-0">Praesent mollis, massa in auctor molestie</p>
+        </div>
+        <div class="mb-4 p-3 bg-light text-start">
+          <h6 class="fw-bold mb-1">Etiam sed iaculis</h6>
+          <p class="text-muted mb-0">Praesent mollis, massa in auctor molestie</p>
+        </div>
+        <div class="mb-4 p-3 bg-light text-start">
+          <h6 class="fw-bold mb-1">Auctor molestie</h6>
+          <p class="text-muted mb-0">Praesent mollis, massa in auctor molestie</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Recent Projects-->
+<section class="py-5 bg-light text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-3">Recent projects</h2>
+    <p class="text-muted mb-4">
+      Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus. 
+      Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. <a href="#">Duis mollis</a>.
+    </p>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="https://picsum.photos/id//400/300" alt="Pilt" class="img-fluid mb-2" />
+        <p class="text-muted">A caption for the above image.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="https://picsum.photos/id//400/300" alt="Pilt" class="img-fluid mb-2" />
+        <p class="text-muted">A caption for the above image.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="https://picsum.photos/id//400/300" alt="Pilt" class="img-fluid mb-2" />
+        <p class="text-muted">A caption for the above image.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="https://picsum.photos/id//400/300" alt="Pilt" class="img-fluid mb-2" />
+        <p class="text-muted">A caption for the above image.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="https://picsum.photos/id//400/300" alt="Pilt" class="img-fluid mb-2" />
+        <p class="text-muted">A caption for the above image.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="https://picsum.photos/id//400/300" alt="Pilt" class="img-fluid mb-2" />
+        <p class="text-muted">A caption for the above image.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Blueprints-->
+<section class="py-5 text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-3">Blueprints</h2>
+    <p class="text-muted mb-5">
+      Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus. 
+      <a href="#">Duis mollis</a>.
+    </p>
+
+    <div class="row align-items-center">
+      <!--Vasakpoolne tekst-->
+      <div class="col-md-4 text-md-start mb-4 mb-md-0">
+        <h5 class="fw-bold">Lorem ipsum</h5>
+        <p class="text-muted">
+          Praesent mollis, massa in auctor molestie, magna lorem semper mauris a venenatis turpis.
+        </p>
+      </div>
+
+      <!--Hinnad-->
+      <div class="col-md-8">
+        <div class="row justify-content-center">
+          <!--Card 1-->
+          <div class="col-md-5 mx-2 mb-4 mb-md-0">
+            <div class="card border-0 h-100">
+              <div class="card-body">
+                <h2 class="display-4 fw-bold">$777</h2>
+                <p class="text-muted mb-4">Business plan</p>
+                <ul class="list-unstyled text-start">
+                  <li>Lorem ipsum efficitur sed</li>
+                  <li>Magna lorem semper</li>
+                  <li>Venenatis turpis sed</li>
+                  <li>Auctor molestie magna</li>
+                </ul>
+                <a href="#" class="btn btn-primary mt-3">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <!--Card 2-->
+          <div class="col-md-5 mx-2">
+            <div class="card border-0 h-100">
+              <div class="card-body">
+                <h2 class="display-6 fw-bold">$77</h2>
+                <p class="text-muted mb-4">Personal plan</p>
+                <ul class="list-unstyled text-start">
+                  <li>Lorem ipsum efficitur sed</li>
+                  <li>Magna lorem semper</li>
+                  <li>Venenatis turpis sed</li>
+                  <li>Auctor molestie magna</li>
+                </ul>
+                <a href="#" class="btn btn-primary mt-3">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Image -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="https://picsum.photos/550/450" alt="Contact illustration" class="img-fluid rounded shadow-sm" />
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-md-6">
+        <h4 class="fw-bold">Why not shoot us a mail?</h4>
+        <p class="text-muted mb-4">We’d love to hear from you. From anyone, really. It’s lonely over here.</p>
+        <form>
+          <div class="mb-3">
+            <select class="form-select" required>
+              <option value="">Vali millega on kiri seotud*</option>
+              <option>Mario arvestab too ara</option>
+              <option>Mario ei arvesta too ara</option>
+              <option>Koik uleval olevad vastused</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Sinu meiliaadress" required />
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="4" placeholder="Sonum pane siia" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <i class="bi bi-send"></i> Send
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<nav class="navbar fixed-bottom bg-white border-top shadow-sm">
+  <div class="container d-flex justify-content-between align-items-center">
+    <!--Alumine navbar-->
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link text-muted" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-muted" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-muted" href="#">Terms</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-muted" href="#">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
