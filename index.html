@@ -5,28 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!--Pilt ja varvid-->
+    <style>
+      .hero {background-image: url("https://picsum.photos/id/600/1920/1080");background-size: cover;height: 500px;display: flex;align-items: center;}
+
+      .btn-outline-blue {color: blue ;background-color: white;}
+
+      .btn-outline-blue:hover {background-color: blue;color: white;}
+
+      .btn-blue {background-color: blue;color: white;border: 2px solid blue;}
+
+      .btn-blue:hover {background-color: blue;}
+    </style>
   </head>
   <body>
-  <!--Pilt ja varvid-->
- <style>
-    .hero {background-image: url("https://picsum.photos/id/600/1920/1080");background-size: cover;height: 500px;display: flex;align-items: center;}
-
-<<<<<<< HEAD:test.html
-    .btn-outline-blue {color: blue;background-color: white;}
-=======
-    .btn-outline-blue {color: blue ;background-color: white;}
->>>>>>> a80c9be706843321e2d6dbe828761a1bcb179e38:index.html
-
-    .btn-outline-blue:hover {background-color: blue;color: white;}
-
-    .btn-blue {background-color: blue;color: white;border: 2px solid blue;}
-
-    .btn-blue:hover {background-color: blue;}
-  </style>
 <!--Navbar-->
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
     <div class="container-fluid px-4">
       <a class="navbar-brand fw-bold text-primary" href="#">Alex</a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
